@@ -8,6 +8,27 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="icon" type="image/png" href="images/TheLab_favicon.ico" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.center-content {
+				text-align: center;
+			}
+			.profile-img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				max-width: 100%;
+				max-height: 300px;
+			}
+			.interests-section {
+				margin-left: 15%;
+			}
+			.interests-section ul {
+				padding: 0;
+			}
+			.interests-section ul li {
+				margin-bottom: 10px;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -24,18 +45,17 @@
 
 						<!-- One -->
 							<section id="one" >
-								<div style="text-align: center;">
-									<header >
+								<div class="center-content">
+									<header>
 										<h1>About Me</h1>
 									</header>
-									<span style=" display: block; margin-left: auto;margin-right: auto;width: 50%;">
-									<img height="200px" width ="150px" src="images/profile.JPG" alt="" /></span>
+									<img class="profile-img" src="images/profile.JPG" alt="Profile Picture">
                                     <p>My name is Stephen Liriano, welcome to my website!</p>
 								</div>
-								<div style="margin-left:25%;">
+								<div class="interests-section">
 									<h3>Interests:</h3>
-                                    <ul >
-                                        <li>Artifical Intelligence</li>
+                                    <ul>
+                                        <li>Artificial Intelligence</li>
                                         <li>Blockchain</li>
                                         <li>Finance</li>
                                         <li>Risk Management</li>
@@ -61,12 +81,3 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
