@@ -1,2 +1,2 @@
 # TheLab
-https://sliriano.github.io/TheLab/
+https://sliriano.github.io
