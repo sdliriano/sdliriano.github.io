@@ -12,21 +12,50 @@
 			.center-content {
 				text-align: center;
 			}
-			.profile-img {
-				display: block;
-				margin-left: auto;
-				margin-right: auto;
-				max-width: 100%;
-				max-height: 300px;
+			.resume-section {
+				margin: 0 auto;
+				max-width: 800px;
+				padding: 0 20px;
 			}
-			.interests-section {
-				margin-left: 15%;
+			.resume-section h3 {
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 10px;
+				margin-top: 30px;
 			}
-			.interests-section ul {
-				padding: 0;
+			.experience-item {
+				margin-bottom: 25px;
 			}
-			.interests-section ul li {
+			.experience-item h4 {
+				margin-bottom: 5px;
+			}
+			.experience-meta {
+				font-style: italic;
 				margin-bottom: 10px;
+			}
+			.skills-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+				gap: 20px;
+			}
+			.skills-category {
+				margin-bottom: 20px;
+			}
+			.skills-list {
+				list-style-type: none;
+				padding-left: 0;
+			}
+			.skills-list li {
+				margin-bottom: 5px;
+			}
+			.contact-info {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 20px;
+				margin-bottom: 30px;
+			}
+			.contact-info a {
+				border-bottom: none;
 			}
 		</style>
 	</head>
@@ -49,22 +78,108 @@
 									<header>
 										<h1>About Me</h1>
 									</header>
-									<img class="profile-img" src="images/profile.JPG" alt="Profile Picture">
-                                    <p>I'm Stephen Liriano, welcome to my website</p>
+									<p>I'm Stephen Liriano, a Software Engineer with expertise in AI, blockchain, and full-stack development.</p>
+									<div class="contact-info">
+										<a href="https://sdliriano.github.io">sdliriano.github.io</a> |
+										<a href="https://github.com/sdliriano">Github.com/sdliriano</a> |
+										<a href="mailto:sliriano@protonmail.com">sliriano@protonmail.com</a> |
+										<span>484-332-5580</span>
+									</div>
 								</div>
-								<div class="interests-section">
-									<h3>Interests:</h3>
-                                    <ul>
-                                        <li>Artificial Intelligence</li>
-                                        <li>Blockchain</li>
-                                        <li>Finance</li>
-										<li>Economics</li>
-										<li>Astronomy</li>
-										<li>Web Development</li>
+								
+								<div class="resume-section">
+									<h3>Experience</h3>
+									<div class="experience-item">
+										<h4>AI Engineer</h4>
+										<div class="experience-meta">Blockchains Inc, Reno, Nevada (Remote) — April 2024 - Present</div>
+										<ul>
+											<li>Develop AI-powered applications using Python and Amazon Bedrock for deploying and interacting with AI models</li>
+											<li>Build chatbots with LangChain, integrating retrieval-augmented generation (RAG) systems</li>
+											<li>Design and implement AI agents using LangGraph for multi-step reasoning and decision-making</li>
+											<li>Utilize Amazon Rekognition for AI-driven content moderation</li>
+											<li>Contribute to AI strategy, integrating LLMs and automation tools</li>
+										</ul>
+									</div>
+									
+									<div class="experience-item">
+										<h4>Full Stack Software Developer</h4>
+										<div class="experience-meta">Nine Minds, Clearwater, Florida — September 2023 - April 2024</div>
+										<ul>
+											<li>Spearheaded a project using Python, Weaviate (vector database), and OpenAI API for an advanced chat interface</li>
+											<li>Designed full-stack applications with Fast API for backend and CassandraDB for database management</li>
+											<li>Implemented task scheduling with Python and Celery for asynchronous execution</li>
+											<li>Managed application deployment on Kubernetes for high availability and scalability</li>
+										</ul>
+									</div>
+									
+									<div class="experience-item">
+										<h4>Technical Specialist</h4>
+										<div class="experience-meta">Lockheed Martin — March 2022 - September 2022</div>
+										<ul>
+											<li>Participated in AI development using General Adversarial Networks</li>
+											<li>Developed GIS web applications with Java Spring Backend and JavaScript/jQuery Frontend</li>
+										</ul>
+									</div>
+									
+									<div class="experience-item">
+										<h4>Software Developer</h4>
+										<div class="experience-meta">Susquehanna International Group (SIG) — April 2020 - September 2020</div>
+										<ul>
+											<li>Contributed to the design and development of Proprietary Trading Services</li>
+											<li>Developed solutions for traders using Python3 and HTML</li>
+											<li>Performed automated testing to ensure product quality</li>
+										</ul>
+									</div>
+									
+									<h3>Education</h3>
+									<div class="experience-item">
+										<h4>Drexel University, Philadelphia, Pennsylvania</h4>
+										<div class="experience-meta">Bachelor of Science in Software Engineering, Minor in Human Computer Interaction</div>
+										<div>September 2018 - June 2023</div>
+									</div>
+									
+									<h3>Skills</h3>
+									<div class="skills-grid">
+										<div class="skills-category">
+											<h4>Computer Languages & Frameworks</h4>
+											<ul class="skills-list">
+												<li>Python3, Javascript, NodeJS, ReactJS</li>
+												<li>Java, PHP, Solidity, Bash</li>
+												<li>HTML5, CSS, Express, SQL</li>
+												<li>Truffle Suite, GPT4, PostgreSQL</li>
+											</ul>
+										</div>
+										
+										<div class="skills-category">
+											<h4>Tools</h4>
+											<ul class="skills-list">
+												<li>Git, Perforce, MySQL</li>
+												<li>Amazon Web Services, Microsoft Azure</li>
+												<li>TeamCity, Visual Studio Code, VIM</li>
+												<li>PHPMyAdmin, JIRA, Conda</li>
+											</ul>
+										</div>
+										
+										<div class="skills-category">
+											<h4>Operating Systems</h4>
+											<ul class="skills-list">
+												<li>Linux, Windows</li>
+												<li>Rasbian (Raspberry Pi), MacOS</li>
+											</ul>
+										</div>
+									</div>
+									
+									<h3>Awards & Activities</h3>
+									<ul>
+										<li>College of Computing & Informatics Senior Showcase 1st Place</li>
+										<li>Member, Drexel Chess (2021 - present)</li>
+										<li>Member, Drexel AI (2019 - present)</li>
+										<li>Member, Drexel Blockchain (2018 - present)</li>
+										<li>Competitor, Philly Codefest Hackathon (2019)</li>
+										<li>Competitor, DragonHacks Hackathon (2019)</li>
 									</ul>
 								</div>
 							</section>
-
 					</div>
 
 				<!-- Footer -->
